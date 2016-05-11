@@ -49,7 +49,7 @@ public class ScratchHomePlugin extends Plugin{
 			//Get the folder of the plugin folder of ScratchHome
 			File [] applicationPluginsFolders = ((FileUserPreferences) getUserPreferences())
 					.getApplicationSubfolders(APPLICATION_PLUGINS_SUB_FOLDER);
-			properties.load(new FileInputStream(applicationPluginsFolders[0].getPath()+"/general.properties"));
+			properties.load(new FileInputStream(applicationPluginsFolders[0].getPath()+"/ScratchHome_general.properties"));
 			} 
 			catch (IOException e) {e.printStackTrace();}
 		
@@ -97,21 +97,21 @@ public class ScratchHomePlugin extends Plugin{
 				ArrayList<String> arr = new ArrayList<String>();
 				for (int i = 0; i < listOfFiles.length; i++) {
 					if (listOfFiles[i].isFile()) {
-						if(listOfFiles[i].getName().startsWith("language_")) {
-							arr.add(listOfFiles[i].getName().substring(9, listOfFiles[i].getName().indexOf(".")));
+						if(listOfFiles[i].getName().startsWith("ScratchHome_language_")) {
+							arr.add(listOfFiles[i].getName().substring(21, listOfFiles[i].getName().indexOf(".")));
 						}
 					}
 				}
 				if(!arr.contains(lang)) {
-					JOptionPane.showMessageDialog(null, "Your language does not have a properties file in your plugin folder.\n Please add a file named language_"+lang+".properties in the folder : "+applicationPluginsFolders[0].getPath()+", and complete it.", "Language not supported", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Your language does not have a properties file in your plugin folder.\n Please add a file named ScratchHome_language_"+lang+".properties in the folder : "+applicationPluginsFolders[0].getPath()+", and complete it.", "Language not supported", JOptionPane.INFORMATION_MESSAGE);
 					
-					properties.load(new FileInputStream(applicationPluginsFolders[0].getPath()+"/general.properties"));
+					properties.load(new FileInputStream(applicationPluginsFolders[0].getPath()+"/ScratchHome_general.properties"));
 					lang = properties.getProperty("language");
 				}
 				
 				input_lang = new BufferedReader(
 						new InputStreamReader(
-								new FileInputStream(applicationPluginsFolders[0].getPath()+"/language_"+lang+".properties"), "UTF8"));
+								new FileInputStream(applicationPluginsFolders[0].getPath()+"/ScratchHome_language_"+lang+".properties"), "UTF8"));
 				langprop.load(input_lang);
 
 				Enumeration<?> e = langprop.propertyNames();
