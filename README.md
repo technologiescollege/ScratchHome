@@ -21,7 +21,7 @@ _fr_
   placer le fichier jar dans le dossier des plugins de SweetHome3D
   C'est fait, SweetHome 3D fera le reste.
   
-  **Article sur le blog officiel** : <http://www.sweethome3d.com/blog/2016/04/22/and_you_how_do_you_use_your_sweet_home_3d_episode_13.html>
+  **[Article sur le blog officiel](http://www.sweethome3d.com/blog/2016/04/22/and_you_how_do_you_use_your_sweet_home_3d_episode_13.html)**
   
 Projet réalisé par :
 - Cédric "zeptoline" Berland
