@@ -1,5 +1,9 @@
 # ScratchHome
-en
+
+[Video demonstration](https://mediacad.ac-nantes.fr/m/723)
+(http://www.sweethome3d.com/blog/images/AndYou13/PlugInScratchHomeDemo3.jpg)
+
+_english_
 
   A plugin that allow you to modify furnitures of [SweetHome3D](http://sweethome3d.com/) through [Scratch](https://scratch.mit.edu/).
   It will use a server to relay all the information from Scratch to the plugin in SweetHome.
@@ -8,7 +12,7 @@ en
   place the jar file in the plugin folder of SweetHome3D
   It's done, SweetHome 3D will do the rest itself.
 
-fr
+_fr_
 
   ScratchHome est un plugin permettant de modifier les meubles de [SweetHome3D](http://sweethome3d.com/) depuis [Scratch](https://scratch.mit.edu/). Il utilisera un serveur qui s'occupera de gérer les informations provenant de Scratch afin de les récupérer.
 
