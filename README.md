@@ -2,7 +2,7 @@
 
 [Video demonstration](https://mediacad.ac-nantes.fr/m/723)
 
-!(http://www.sweethome3d.com/blog/images/AndYou13/PlugInScratchHomeDemo3.jpg)
+(http://www.sweethome3d.com/blog/images/AndYou13/PlugInScratchHomeDemo3.jpg)
 
 _english_
 
