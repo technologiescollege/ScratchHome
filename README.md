@@ -8,13 +8,13 @@ Video demonstration : [https://mediacad.ac-nantes.fr/m/723](https://mediacad.ac-
 
 _english_
 
-  		A plugin that allow you to modify furnitures of [SweetHome3D](http://sweethome3d.com/) through [Scratch](https://scratch.mit.edu/).
-			It will use a server to relay all the information from Scratch to the plugin in SweetHome.
+	A plugin that allow you to modify furnitures of [SweetHome3D](http://sweethome3d.com/) through [Scratch](https://scratch.mit.edu/).
+	It will use a server to relay all the information from Scratch to the plugin in SweetHome.
 
-  		**How to install it** :
-  			1. export the Java project in a jar file
-  			2. place the jar file in the plugin folder of SweetHome3D
-  		It's done, SweetHome 3D will do the rest itself.
+	**How to install it** :
+		1. export the Java project in a jar file
+		2. place the jar file in the plugin folder of SweetHome3D
+	It's done, SweetHome 3D will do the rest itself.
 
 _fr_
 
