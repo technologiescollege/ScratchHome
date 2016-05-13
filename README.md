@@ -1,6 +1,8 @@
 # ScratchHome
+![](https://github.com/technologiescollege/ScratchHome/blob/master/scratchhome.png)
 
-[Video demonstration](https://mediacad.ac-nantes.fr/m/723)
+Video demonstration : [https://mediacad.ac-nantes.fr/m/723](https://mediacad.ac-nantes.fr/m/723)
+
 
 ![](http://www.sweethome3d.com/blog/images/AndYou13/PlugInScratchHomeDemo3.jpg)
 
