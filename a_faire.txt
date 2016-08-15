@@ -1,0 +1,19 @@
+    tester le changement de version dans ".settings/org.eclipse.jdt.core.prefs" il faudrait remplacer 1.7 par 1.6 (3 fois) puis tester sous Linux
+    dans le panneau du serveur de communication, afficher la version du plugin (dans le titre de la fenêtre par exemple)
+
+    pour simplifier la compréhension des fichiers, les renommer en :
+        ScratchHome.jar
+        ScratchHome_general.properties
+        ScratchHome_language_en.properties
+        ScratchHome_language_fr.properties
+
+    pour 'Statut du serveur', changer :
+        'Stop' par 'ARRETE' (enfin avec les accents si possible)
+        'Serveur lancé...' par 'serveur lancé...'
+
+    quand on génère le fichier sb2 :
+        'Prendre tous les objets' -> 'sélectionner tous les objets'
+        'Ne prendre...' -> 'ne prendre...'
+        ne pas afficher le message 'Hallo!' à chaque objet intégré au sb2
+        ne plus mettre le hashcode dans le nom du bloc car il n'a pas d'utilité pour l'utilisateur
+        enregistrer automatiquement le fichier sweethome avec le champ description rempli pour éviter de fermer SH3D et d'avoir à tout refaire. En effet, SH3D ne détecte pas que le fichier a changé quand on rajoute les descriptions, du coup on le ferme puis quand on l'ouvre à nouveau le hashcode a changé...

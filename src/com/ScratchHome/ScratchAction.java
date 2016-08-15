@@ -61,7 +61,7 @@ public class ScratchAction extends PluginAction {
 	}
 	
 	/**
-	 * Metho that launch again the server
+	 * Method that launch again the server
 	 * 
 	 */
 	public void reupListener() {

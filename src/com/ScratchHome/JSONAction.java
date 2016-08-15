@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
@@ -55,12 +58,22 @@ public class JSONAction extends PluginAction{
      */
 	public void execute() {
 		if(!(home.getFurniture().isEmpty())) {
-			createJSON(this.home);
+			try {
+				createJSON(this.home);
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null,"Une exception a été rencontrée.\nVeuillez la signaler sur le github du projet\nhttps://github.com/technologiescollege/ScratchHome/issues\nLe message d'erreur :\n"+getStackTrace(e));
+			}
 		} else {
 			JOptionPane.showMessageDialog(null,language.get("NoObject"));
 		}
 	}
-
+	public static String getStackTrace(Throwable aThrowable) {
+	    final Writer result = new StringWriter();
+	    final PrintWriter printWriter = new PrintWriter(result);
+	    aThrowable.printStackTrace(printWriter);
+	    return result.toString();
+	}
+	
 	/**
 	 * JSONAction Constructor.
 	 * @param home representing the 3D scene.
@@ -124,14 +137,17 @@ public class JSONAction extends PluginAction{
 		ArrayList<String> listElem = new ArrayList<String>();
 		//Adding objects to the previous list
 		for (HomePieceOfFurniture fourniture : home.getFurniture()) {
+			
+			if(fourniture.getDescription() == null) {
+				fourniture.setDescription(""+fourniture.hashCode());
+			}
 			if(allObject==true){
-				listElem.add(fourniture.getName()+"("+fourniture.hashCode()+")");
+				listElem.add(fourniture.getName()+"("+fourniture.getDescription()+")");
 			}else{
 				if(fourniture instanceof Light){
-					listElem.add(fourniture.getName()+"("+fourniture.hashCode()+")");
+					listElem.add(fourniture.getName()+"("+fourniture.getDescription()+")");
 				}
 			}
-
 		}
 
 		
