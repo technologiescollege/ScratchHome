@@ -18,7 +18,8 @@ _english_
 	
   It's done, SweetHome 3D will do the rest itself.
 
-_fr_
+  
+_french_
 
    ScratchHome est un plugin permettant de modifier les meubles de [SweetHome3D](http://sweethome3d.com/) depuis [Scratch](https://scratch.mit.edu/). Il utilise un serveur qui gére les informations provenant de Scratch afin de les récupérer.
 
